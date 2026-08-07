@@ -29,7 +29,7 @@ const faqs = [
   ["How does the Marketplace profile work?", "The public card is the fast introduction. Visitors can continue to your fuller Tax Compliance Pro Marketplace profile, where an optional login or registration prompt may appear as part of the handoff."],
   ["Can I update my information later?", "Yes. Your dashboard is the control center for profile content, custom links, privacy settings, sharing tools, wallet options, card status, and analytics."],
   ["Does the card expose all of my information?", "No. Field-level controls let you choose whether applicable information is public, visible to members only, or private to you and administrators."],
-  ["How much does ProConnect cost?", "ProConnect is a one-time $19 purchase. The current listed single-card price for dot.metal is $50, so ProConnect costs $31 less based on pricing checked August 7, 2026."],
+  ["How much does ProConnect cost?", "ProConnect is a one-time $19 purchase—$31 less than the current $50 listed price for a comparable premium NFC business card. Competitor pricing may change."],
 ];
 
 export default function Home() {
@@ -37,8 +37,9 @@ export default function Home() {
     <main>
       <div className="announcement">A smarter first impression for tax professionals <span>Introducing ProConnect — $19 one time</span></div>
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="brand brand-logo" href="#top" aria-label="ProConnect by Tax Compliance Pro home">
-          <img src="/proconnect-logo.jpg" alt="ProConnect digital business card by Tax Compliance Pro" />
+        <a className="proconnect-wordmark" href="#top" aria-label="ProConnect by Tax Compliance Pro home">
+          <span className="wordmark-main"><b>PRO</b>CONNECT <i>)))</i></span>
+          <span className="wordmark-sub">Digital Business Card · Tax Compliance Pro</span>
         </a>
         <div className="nav-links">
           <a href="#how">How it works</a><a href="#features">Features</a><a href="#marketplace">Marketplace</a><a href="#faq">FAQ</a>
@@ -64,9 +65,8 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Tax Compliance Pro Tap Card and public profile preview">
           <div className="gold-orbit orbit-one" /><div className="gold-orbit orbit-two" />
-          <div className="card-stack" aria-label="Front and back of the ProConnect digital business card">
-            <div className="official-card card-back"><span className="sr-only">Back of ProConnect card</span></div>
-            <div className="official-card card-front"><span className="sr-only">Front of ProConnect card</span></div>
+          <div className="card-artwork" aria-label="Front and back of the ProConnect digital business card">
+            <img src="/proconnect-card.png" alt="Front and back of the ProConnect digital business card" />
           </div>
           <div className="phone-profile">
             <div className="phone-speaker" />
@@ -93,9 +93,9 @@ export default function Home() {
           <div className="price-compare">
             <div className="our-price"><small>ProConnect</small><strong>$19</strong><span>one time</span></div>
             <div className="versus">vs.</div>
-            <div className="their-price"><small>dot.metal listed price</small><strong>$50</strong><span>single card</span></div>
+            <div className="their-price"><small>Competitor pricing</small><strong>$50</strong><span>comparable card</span></div>
           </div>
-          <div className="savings"><strong>Save $31</strong><span>ProConnect is 62% less than the current dot.metal single-card listing.</span><small>Competitor price checked August 7, 2026 and may change.</small></div>
+          <div className="savings"><strong>Save $31</strong><span>ProConnect is 62% less than the current listed price for a comparable premium NFC business card.</span><small>Competitor pricing checked August 7, 2026 and may change.</small></div>
         </div>
       </section>
 
@@ -195,7 +195,7 @@ export default function Home() {
 
       <footer>
         <div className="shell footer-main">
-          <a className="brand brand-light brand-logo footer-logo" href="#top"><img src="/proconnect-logo.jpg" alt="ProConnect by Tax Compliance Pro" /></a>
+          <a className="proconnect-wordmark wordmark-light" href="#top" aria-label="ProConnect by Tax Compliance Pro home"><span className="wordmark-main"><b>PRO</b>CONNECT <i>)))</i></span><span className="wordmark-sub">Digital Business Card · Tax Compliance Pro</span></a>
           <p>Professional connection tools for the tax community.</p>
           <div><a href="#how">How it works</a><a href="#features">Features</a><a href="#marketplace">Marketplace</a><a href="#faq">FAQ</a></div>
         </div>
