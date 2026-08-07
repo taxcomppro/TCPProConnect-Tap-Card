@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-:root { --ink:#111813; --forest:#17251d; --forest-2:#203128; --gold:#b8954f; --gold-light:#d8bd7b; --cream:#f7f3e9; --paper:#fffdf7; --muted:#69726c; --line:#ded8c9; }
+:root { --ink:#101318; --forest:#11161d; --forest-2:#0b3e78; --blue:#0b4b91; --blue-deep:#071f3f; --gold:#b8954f; --gold-light:#d8bd7b; --cream:#f7f3e9; --paper:#fffdf7; --muted:#69726c; --line:#ded8c9; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; background:var(--cream); color:var(--ink); font-family:var(--font-geist-sans), Arial, sans-serif; }
@@ -61,10 +61,13 @@ h1 em,h2 em { color:var(--gold); font-weight:400; }
 .sr-only { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
 .card-artwork { position:absolute; z-index:4; left:-55px; top:278px; width:515px; transform:rotate(-6deg); filter:drop-shadow(0 24px 24px rgba(12,18,14,.3)); }
 .card-artwork img { display:block; width:100%; height:auto; mix-blend-mode:multiply; }
-.card-artwork-v2 { position:absolute; z-index:4; left:-62px; top:155px; width:460px; height:390px; }
-.card-image { position:absolute; display:block; width:365px; height:auto; border-radius:16px; box-shadow:0 28px 46px rgba(12,18,14,.32); }
-.card-image-back { left:100px; top:0; transform:rotate(7deg); }
-.card-image-front { left:0; top:148px; transform:rotate(-8deg); }
+.card-artwork-v2 { position:absolute; z-index:4; left:-62px; top:155px; width:470px; height:390px; }
+.card-frame { position:absolute; width:365px; overflow:hidden; border-radius:18px; box-shadow:0 28px 46px rgba(12,18,14,.34); background:#080a0c; }
+.card-frame img { position:absolute; display:block; width:423px; max-width:none; height:auto; left:-29px; }
+.card-frame-back { left:100px; top:0; height:212px; transform:rotate(7deg); }
+.card-frame-back img { top:-33px; }
+.card-frame-front { left:0; top:148px; height:203px; transform:rotate(-8deg); }
+.card-frame-front img { top:-34px; }
 .card-shine { position:absolute; inset:-80% auto auto -20%; height:220%; width:45%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.09),transparent); transform:rotate(28deg); }
 .card-top,.card-bottom { position:relative; display:flex; justify-content:space-between; align-items:flex-start; }
 .mini-mark { border:1px solid #a88c4d; border-radius:50%; height:33px; width:33px; display:grid; place-items:center; font:700 8px var(--font-geist-mono); }
@@ -141,4 +144,21 @@ footer { background:#0b100d;color:#9da49f;padding:55px 0 20px; }.footer-main { d
   .card-image { width:325px; }
   .card-image-back { left:85px; }
   .card-image-front { top:135px; }
+}
+
+/* The page stays black and gold, then transitions into Tax Compliance Pro blue. */
+.feature-section { background:linear-gradient(145deg,#11151b 0%,#0b294f 72%,#0b4b91 130%); }
+.control { background:linear-gradient(145deg,#0c1118 0%,#0a315f 70%,#0b4b91 125%); }
+.dash-head { background:linear-gradient(90deg,#10161e,#0b3e78); }
+.final-cta { background:linear-gradient(115deg,#0b3e78 0%,#081d37 48%,#0b0f14 100%); }
+footer { background:#080e17; }
+
+@media (max-width:620px) {
+  .card-artwork-v2 { left:-52px; top:180px; width:415px; }
+  .card-frame { width:325px; border-radius:16px; }
+  .card-frame img { width:376px; left:-26px; }
+  .card-frame-back { left:86px; height:189px; }
+  .card-frame-back img { top:-29px; }
+  .card-frame-front { top:132px; height:181px; }
+  .card-frame-front img { top:-30px; }
 }

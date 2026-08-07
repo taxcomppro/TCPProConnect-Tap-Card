@@ -65,8 +65,8 @@ export default function Home() {
         <div className="hero-visual" aria-label="Tax Compliance Pro Tap Card and public profile preview">
           <div className="gold-orbit orbit-one" /><div className="gold-orbit orbit-two" />
           <div className="card-artwork-v2" aria-label="Front and back of the ProConnect digital business card">
-            <img className="card-image card-image-back" src="/proconnect-card-back.png" alt="Back of the ProConnect digital business card with tap indicator" />
-            <img className="card-image card-image-front" src="/proconnect-card-front.png" alt="Front of the ProConnect digital business card" />
+            <div className="card-frame card-frame-back"><img src="/proconnect-card-back.png" alt="Back of the ProConnect digital business card with tap indicator" /></div>
+            <div className="card-frame card-frame-front"><img src="/proconnect-card-front.png" alt="Front of the ProConnect digital business card" /></div>
           </div>
           <div className="phone-profile">
             <div className="phone-speaker" />
