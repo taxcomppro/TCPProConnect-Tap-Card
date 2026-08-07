@@ -37,9 +37,8 @@ export default function Home() {
     <main>
       <div className="announcement">A smarter first impression for tax professionals <span>Introducing ProConnect — $19 one time</span></div>
       <nav className="nav shell" aria-label="Main navigation">
-        <a className="proconnect-wordmark" href="#top" aria-label="ProConnect by Tax Compliance Pro home">
-          <span className="wordmark-main"><b>PRO</b>CONNECT <i>)))</i></span>
-          <span className="wordmark-sub">Digital Business Card · Tax Compliance Pro</span>
+        <a className="proconnect-logo-v2" href="#top" aria-label="ProConnect by Tax Compliance Pro home">
+          <img src="/proconnect-logo-v2.png" alt="ProConnect digital business card, a product of Tax Compliance Pro" />
         </a>
         <div className="nav-links">
           <a href="#how">How it works</a><a href="#features">Features</a><a href="#marketplace">Marketplace</a><a href="#faq">FAQ</a>
@@ -65,8 +64,9 @@ export default function Home() {
         </div>
         <div className="hero-visual" aria-label="Tax Compliance Pro Tap Card and public profile preview">
           <div className="gold-orbit orbit-one" /><div className="gold-orbit orbit-two" />
-          <div className="card-artwork" aria-label="Front and back of the ProConnect digital business card">
-            <img src="/proconnect-card.png" alt="Front and back of the ProConnect digital business card" />
+          <div className="card-artwork-v2" aria-label="Front and back of the ProConnect digital business card">
+            <img className="card-image card-image-back" src="/proconnect-card-back.png" alt="Back of the ProConnect digital business card with tap indicator" />
+            <img className="card-image card-image-front" src="/proconnect-card-front.png" alt="Front of the ProConnect digital business card" />
           </div>
           <div className="phone-profile">
             <div className="phone-speaker" />
