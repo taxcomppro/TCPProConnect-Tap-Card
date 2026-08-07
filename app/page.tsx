@@ -29,13 +29,13 @@ const faqs = [
   ["How does the Marketplace profile work?", "The public card is the fast introduction. Visitors can continue to your fuller Tax Compliance Pro Marketplace profile, where an optional login or registration prompt may appear as part of the handoff."],
   ["Can I update my information later?", "Yes. Your dashboard is the control center for profile content, custom links, privacy settings, sharing tools, wallet options, card status, and analytics."],
   ["Does the card expose all of my information?", "No. Field-level controls let you choose whether applicable information is public, visible to members only, or private to you and administrators."],
-  ["How much does ProConnect cost?", "ProConnect is a one-time $19 purchase—$31 less than the current $50 listed price for a comparable premium NFC business card. Competitor pricing may change."],
+  ["How much does ProConnect cost?", "ProConnect is a one-time $29 purchase—$21 less than the current $50 listed price for a comparable premium NFC business card. Competitor pricing may change."],
 ];
 
 export default function Home() {
   return (
     <main>
-      <div className="announcement">A smarter first impression for tax professionals <span>Introducing ProConnect — $19 one time</span></div>
+      <div className="announcement">A smarter first impression for professionals <span>Introducing ProConnect — $29 one time</span></div>
       <nav className="nav shell" aria-label="Main navigation">
         <a className="proconnect-logo-v2" href="#top" aria-label="ProConnect by Tax Compliance Pro home">
           <img src="/proconnect-logo-v2.png" alt="ProConnect digital business card, a product of Tax Compliance Pro" />
@@ -43,19 +43,20 @@ export default function Home() {
         <div className="nav-links">
           <a href="#how">How it works</a><a href="#features">Features</a><a href="#marketplace">Marketplace</a><a href="#faq">FAQ</a>
         </div>
-        <a className="button button-small" href="https://www.taxcomppro.com">Buy for $19 <Arrow /></a>
+        <div className="nav-actions"><a className="button button-small" href="https://www.taxcomppro.com">Buy for $29 <Arrow /></a><a className="button button-small button-outline nav-activate" href="https://www.taxcomppro.com/connect">Activate Existing Card</a></div>
       </nav>
 
       <section className="hero shell" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> Meet ProConnect</p>
           <h1>Your expertise.<br /><em>One powerful tap.</em></h1>
-          <p className="hero-lede">The $19 digital business card built for tax professionals. Tap, scan, or share your public profile—then guide the right connections to your full Tax Compliance Pro Marketplace presence.</p>
+          <p className="hero-lede"><strong>Tap it. Scan it. Share it.</strong><br />Give clients and connections one simple link to find you, connect with you, and explore your full <b>Tax Compliance Pro Marketplace</b> presence.</p>
           <div className="hero-actions">
-            <a className="button" href="https://www.taxcomppro.com">Buy ProConnect — $19 <Arrow /></a>
+            <a className="button" href="https://www.taxcomppro.com">Buy ProConnect — $29 <Arrow /></a>
+            <a className="button button-outline" href="https://www.taxcomppro.com/connect">Activate Existing Card <Arrow /></a>
             <a className="text-link" href="#how">See how it works <span>↓</span></a>
           </div>
-          <div className="price-note"><strong>$19</strong><span><b>One-time price</b><small>One card. No recurring card fee.</small></span></div>
+          <div className="price-note"><strong>$29</strong><span><b>One-time price</b><small>One card. No recurring card fee.</small></span></div>
           <div className="hero-proof">
             <div><b>No app</b><span>needed to view</span></div>
             <div><b>One activation</b><span>two professional profiles</span></div>
@@ -91,11 +92,11 @@ export default function Home() {
         <div className="shell price-band-inner">
           <div><p className="eyebrow"><span /> Premium value</p><h2>Professional connection<br />without the premium price.</h2></div>
           <div className="price-compare">
-            <div className="our-price"><small>ProConnect</small><strong>$19</strong><span>one time</span></div>
+            <div className="our-price"><small>ProConnect</small><strong>$29</strong><span>one time</span></div>
             <div className="versus">vs.</div>
             <div className="their-price"><small>Competitor pricing</small><strong>$50</strong><span>comparable card</span></div>
           </div>
-          <div className="savings"><strong>Save $31</strong><span>ProConnect is 62% less than the current listed price for a comparable premium NFC business card.</span><small>Competitor pricing checked August 7, 2026 and may change.</small></div>
+          <div className="savings"><strong>Save $21</strong><span>ProConnect is 42% less than the current listed price for a comparable premium NFC business card.</span><small>Competitor pricing checked August 7, 2026 and may change.</small></div>
         </div>
       </section>
 
@@ -105,13 +106,13 @@ export default function Home() {
           <h2>From introduction<br />to <em>opportunity.</em></h2>
         </div>
         <div className="intro-copy">
-          <p>ProConnect turns a quick hello into a professional connection. Your card opens a focused public profile, then gives interested visitors a clear path to your fuller presence in the Tax Compliance Pro Marketplace.</p>
-          <p>Update your information without reprinting. Share only what you choose. Keep the next step close at hand.</p>
+          <p>It gives you one simple, shareable profile where clients and professional connections can quickly find your contact information, services, social links, and more.</p>
+          <p>Update your information anytime—no reprinting business cards.</p>
         </div>
       </section>
 
       <section className="steps shell section">
-        <article><span className="step-num">01</span><Icon>▣</Icon><h3>Purchase for $19</h3><p>Order your ProConnect card once through taxcomppro.com.</p></article>
+        <article><span className="step-num">01</span><Icon>▣</Icon><h3>Purchase for $29</h3><p>Order your ProConnect card once through taxcomppro.com.</p></article>
         <article><span className="step-num">02</span><Icon>⌁</Icon><h3>Activate once</h3><p>Tap your card or visit taxcomppro.com/connect to build your profile and choose your public URL.</p></article>
         <article><span className="step-num">03</span><Icon>◎</Icon><h3>Publish two profiles</h3><p>Activation creates your public Tap Card page and Marketplace profile together.</p></article>
         <article><span className="step-num">04</span><Icon>↗</Icon><h3>Tap. Share. Grow.</h3><p>Connect in person, by QR, or by link—and refine your presence with analytics.</p></article>
@@ -188,7 +189,7 @@ export default function Home() {
           <p className="eyebrow light"><span /> Your next connection starts here</p>
           <h2>One card. One profile.<br /><em>More ways to grow.</em></h2>
           <p>Make every introduction easier to remember—and every next step easier to take.</p>
-          <a className="button gold-button" href="https://www.taxcomppro.com">Buy ProConnect — $19 <Arrow /></a>
+          <a className="button gold-button" href="https://www.taxcomppro.com">Buy ProConnect — $29 <Arrow /></a>
           <small>One-time price · Available through Tax Compliance Pro</small>
         </div>
       </section>
@@ -196,7 +197,7 @@ export default function Home() {
       <footer>
         <div className="shell footer-main">
           <a className="proconnect-wordmark wordmark-light" href="#top" aria-label="ProConnect by Tax Compliance Pro home"><span className="wordmark-main"><b>PRO</b>CONNECT <i>)))</i></span><span className="wordmark-sub">Digital Business Card · Tax Compliance Pro</span></a>
-          <p>Professional connection tools for the tax community.</p>
+          <p>Professional connection tools for professionals.</p>
           <div><a href="#how">How it works</a><a href="#features">Features</a><a href="#marketplace">Marketplace</a><a href="#faq">FAQ</a></div>
         </div>
         <div className="shell footer-bottom"><span>© 2026 Tax Compliance Pro. All rights reserved.</span><a href="https://www.taxcomppro.com">www.taxcomppro.com</a></div>
