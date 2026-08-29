@@ -57,6 +57,16 @@ export default async function PublicCardPage({ params }: PublicCardPageProps) {
 
           <ProfileActions cardToken={profile.cardToken} profileName={profile.fullName} phone={profile.phone} email={profile.email} />
 
+          {profile.marketplaceUrl ? <a className="tcp-profile-feature" href={profile.marketplaceUrl} target="_blank" rel="noreferrer">
+            <span className="tcp-profile-feature-mark">TCP</span>
+            <span className="tcp-profile-feature-copy">
+              <small>Tax Compliance Pro</small>
+              <b>View my full professional profile</b>
+              <em>Services, credentials, and member information</em>
+            </span>
+            <i aria-hidden="true">→</i>
+          </a> : null}
+
           <div className="public-profile-body">
             <p className="public-profile-bio">{profile.bio}</p>
             <div className="specialty-list" aria-label="Professional specialties">
@@ -71,12 +81,6 @@ export default async function PublicCardPage({ params }: PublicCardPageProps) {
                 </a>
               ))}
             </div>
-
-            {profile.marketplaceUrl ? <a className="marketplace-profile-link" href={profile.marketplaceUrl} target="_blank" rel="noreferrer">
-              <span className="marketplace-profile-mark">TCP</span>
-              <span><small>Verified professional</small><b>View full Marketplace profile</b></span>
-              <i aria-hidden="true">→</i>
-            </a> : null}
 
             <ConnectionExchange cardToken={profile.cardToken} firstName={profile.fullName.split(" ")[0]} />
           </div>

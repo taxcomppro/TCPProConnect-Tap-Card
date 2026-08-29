@@ -22,7 +22,7 @@ test("provides the customer-facing tap-card actions", async () => {
     source("app/connect/[cardToken]/profile-actions.tsx"),
     source("app/connect/[cardToken]/connection-exchange.tsx"),
   ]);
-  assert.match(page, /View full Marketplace profile/);
+  assert.match(page, /View my full professional profile/);
   assert.match(actions, /Save/);
   assert.match(actions, /navigator\.share/);
   assert.match(exchange, /Share my info/);
