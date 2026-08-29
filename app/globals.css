@@ -152,6 +152,78 @@ footer { background:#0b100d;color:#9da49f;padding:55px 0 20px; }.footer-main { d
   .card-image-front { top:135px; }
 }
 
+/* Public ProConnect card profile */
+.public-profile-page { min-height:100svh; background:linear-gradient(155deg,#071426 0%,#0b3f78 52%,#07111f 100%); padding:22px 14px 42px; }
+.public-profile-shell { width:min(100%,520px); margin:0 auto; }
+.public-profile-brand { display:flex; align-items:center; justify-content:space-between; color:#b9c5d3; padding:0 3px 16px; font-size:10px; letter-spacing:.13em; text-transform:uppercase; }
+.public-profile-brand a { display:block; width:178px; height:48px; overflow:hidden; border-radius:7px; background:#fff; }
+.public-profile-brand img { width:100%; height:100%; object-fit:cover; transform:scale(.94); }
+.public-profile-card { position:relative; overflow:hidden; background:#fffdf8; border:1px solid rgba(255,255,255,.25); border-radius:26px; box-shadow:0 28px 80px rgba(0,0,0,.32); }
+.public-profile-cover { position:relative; height:150px; overflow:hidden; background:linear-gradient(130deg,#08111d 0%,#0b3e78 62%,#b8954f 160%); }
+.public-profile-cover::after { content:""; position:absolute; width:290px; height:290px; border:1px solid rgba(216,189,123,.25); border-radius:50%; right:-90px; top:-165px; box-shadow:0 0 0 42px rgba(216,189,123,.04),0 0 0 84px rgba(216,189,123,.025); }
+.public-profile-cover > span { position:absolute; left:27px; top:28px; display:grid; place-items:center; width:48px; height:48px; border:1px solid rgba(216,189,123,.75); border-radius:50%; color:#d8bd7b; font:700 10px var(--font-geist-mono); letter-spacing:.08em; }
+.public-profile-cover i { position:absolute; display:block; width:5px; height:5px; border-radius:50%; background:#d8bd7b; opacity:.72; }
+.public-profile-cover i:nth-of-type(1){right:44px;top:94px}.public-profile-cover i:nth-of-type(2){right:72px;top:61px}.public-profile-cover i:nth-of-type(3){right:103px;top:107px}
+.public-profile-avatar { position:absolute; top:99px; left:50%; transform:translateX(-50%); display:grid; place-items:center; width:102px; height:102px; border:5px solid #fffdf8; border-radius:50%; background:linear-gradient(145deg,#e7d6ad,#b8954f); color:#3b2e15; font:31px var(--font-playfair),Georgia,serif; box-shadow:0 8px 25px rgba(20,31,50,.16); }
+.public-profile-identity { padding:62px 24px 20px; text-align:center; }
+.public-profile-name-line { display:flex; align-items:center; justify-content:center; gap:8px; }
+.public-profile-name-line h1 { margin:0; color:#121923; font:700 31px/1.1 var(--font-playfair),Georgia,serif; letter-spacing:-.025em; }
+.verified-mark { display:grid; place-items:center; width:19px; height:19px; border-radius:50%; background:#0b4b91; color:white; font-size:11px; }
+.public-profile-identity p { margin:8px 0 3px; color:#4d5966; font-size:14px; }
+.public-profile-identity strong { display:block; color:#172131; font-size:13px; }
+.public-profile-identity > small { display:block; margin-top:6px; color:#83909d; font-size:11px; }
+.public-profile-actions { display:grid; grid-template-columns:repeat(auto-fit,minmax(52px,1fr)); gap:5px; padding:0 20px 24px; border-bottom:1px solid #e7e3d9; }
+.public-profile-actions a,.public-profile-actions button { appearance:none; border:0; background:transparent; color:#2d3948; display:flex; flex-direction:column; align-items:center; gap:6px; padding:0; font:inherit; cursor:pointer; }
+.public-profile-actions span { display:grid; place-items:center; width:44px; height:44px; border-radius:50%; border:1px solid #d9d7cf; background:white; color:#0b4b91; font-size:17px; box-shadow:0 5px 14px rgba(16,35,61,.06); }
+.public-profile-actions small { font-size:9px; font-weight:650; letter-spacing:.04em; }
+.public-profile-body { padding:24px; }
+.public-profile-bio { margin:0; color:#56616b; font-size:13px; line-height:1.72; text-align:center; }
+.specialty-list { display:flex; flex-wrap:wrap; justify-content:center; gap:7px; margin:18px 0 24px; }
+.specialty-list span { padding:7px 10px; border-radius:999px; background:#edf3f8; color:#315777; font-size:9px; font-weight:650; letter-spacing:.03em; }
+.public-profile-links { display:grid; gap:11px; }
+.public-profile-links > a { display:flex; align-items:center; justify-content:space-between; min-height:68px; padding:14px 17px; border:1px solid #dedcd4; border-radius:14px; background:white; color:#192432; transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease; }
+.public-profile-links > a:hover { transform:translateY(-2px); border-color:#b8954f; box-shadow:0 10px 24px rgba(12,31,54,.08); }
+.public-profile-links span { display:flex; flex-direction:column; gap:4px; }
+.public-profile-links b { font-size:13px; }
+.public-profile-links small { color:#7a858e; font-size:10px; }
+.public-profile-links i { color:#b8954f; font-style:normal; font-size:16px; }
+.marketplace-profile-link { display:flex; align-items:center; gap:12px; margin-top:18px; padding:15px; border-radius:14px; background:linear-gradient(120deg,#0a315f,#071b34); color:white; }
+.marketplace-profile-mark { display:grid; place-items:center; width:40px; height:40px; flex:0 0 auto; border:1px solid #d8bd7b; border-radius:50%; color:#d8bd7b; font:700 8px var(--font-geist-mono); }
+.marketplace-profile-link > span:nth-child(2) { display:flex; flex-direction:column; gap:3px; }
+.marketplace-profile-link small { color:#aabbd0; font-size:8px; text-transform:uppercase; letter-spacing:.09em; }
+.marketplace-profile-link b { font-size:11px; }
+.marketplace-profile-link i { margin-left:auto; color:#d8bd7b; font-style:normal; }
+.exchange-card { display:grid; grid-template-columns:auto 1fr; gap:11px 13px; align-items:center; margin-top:18px; padding:17px; border:1px solid #e2ded3; border-radius:14px; background:#f7f3e9; }
+.exchange-icon { display:grid; place-items:center; width:39px; height:39px; border-radius:50%; background:#e5d6b3; color:#745e2e; }
+.exchange-card h2 { margin:0 0 3px; font:700 16px var(--font-playfair),Georgia,serif; }
+.exchange-card p { margin:0; color:#707a82; font-size:10px; line-height:1.45; }
+.exchange-card button { grid-column:1/-1; border:0; border-radius:10px; background:#d8d8d5; color:#777; padding:11px; font:650 10px var(--font-geist-sans); cursor:not-allowed; }
+.public-profile-footer { display:flex; justify-content:space-between; padding:19px 6px 0; color:#aebdce; font-size:9px; letter-spacing:.07em; text-transform:uppercase; }
+.public-profile-footer b { color:#d8bd7b; }
+.public-profile-footer a { color:white; }
+@media (max-width:430px) { .public-profile-page{padding:0 0 28px;background:#fffdf8}.public-profile-brand{padding:12px 16px;background:#071426}.public-profile-brand a{width:150px;height:40px}.public-profile-brand>span{display:none}.public-profile-card{border:0;border-radius:0;box-shadow:none}.public-profile-body{padding:22px 18px}.public-profile-actions{padding-inline:12px}.public-profile-actions span{width:41px;height:41px}.public-profile-footer{padding-inline:18px;color:#61758a}.public-profile-footer a{color:#0b4b91}}
+.connect-entry-page { min-height:100svh; display:grid; place-items:center; padding:24px; background:linear-gradient(145deg,#071426,#0b4b91); }
+.connect-entry-card { width:min(100%,520px); padding:42px; border-radius:24px; background:#fffdf8; box-shadow:0 25px 75px rgba(0,0,0,.3); }
+.connect-entry-card > img { width:220px; height:58px; object-fit:cover; display:block; margin-bottom:34px; }
+.connect-entry-card h1 { margin:13px 0; font:700 42px/1.05 var(--font-playfair),Georgia,serif; }
+.connect-entry-card > p:not(.eyebrow) { color:#64707b; line-height:1.65; }
+.connect-entry-card > a { display:block; margin-top:24px; color:#0b4b91; font-size:11px; text-align:center; }
+.card-code-form { margin-top:25px; padding-top:23px; border-top:1px solid #e2ded4; }
+.card-code-form label { display:block; margin-bottom:8px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.card-code-form > div { display:flex; gap:8px; }
+.card-code-form input { min-width:0; flex:1; padding:13px 14px; border:1px solid #d8d6cf; border-radius:10px; background:white; font:12px var(--font-geist-sans); }
+.card-code-form button { border:0; border-radius:10px; padding:0 17px; background:#0b4b91; color:white; font-weight:700; }
+.card-code-form small { display:block; margin-top:8px; color:#899199; font-size:9px; }
+.connection-form { grid-column:1/-1; display:grid; gap:10px; }
+.connection-form label { display:grid; gap:5px; color:#44515d; font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; }
+.connection-form input,.connection-form textarea { width:100%; border:1px solid #d7d4ca; border-radius:8px; background:white; padding:10px; color:#172131; font:12px var(--font-geist-sans); text-transform:none; letter-spacing:0; resize:vertical; }
+.connection-form .consent-row { display:flex; grid-template-columns:auto 1fr; align-items:flex-start; gap:7px; color:#68727b; font-size:9px; font-weight:400; line-height:1.45; text-transform:none; letter-spacing:0; }
+.connection-form .consent-row input { width:auto; margin-top:2px; }
+.connection-form > p { margin:0; color:#a72d2d; font-size:10px; }
+.connection-honeypot { position:absolute!important; left:-10000px!important; width:1px!important; height:1px!important; overflow:hidden!important; }
+.connection-success { grid-column:1/-1; margin:2px 0 0; color:#2f6a42; font-size:11px; font-weight:700; }
+@media (max-width:430px) { .connect-entry-page{padding:0;background:#fffdf8}.connect-entry-card{min-height:100svh;border-radius:0;box-shadow:none;padding:34px 22px}.connect-entry-card h1{font-size:36px}.card-code-form>div{flex-direction:column}.card-code-form button{padding:13px} }
+
 /* The page stays black and gold, then transitions into Tax Compliance Pro blue. */
 .feature-section { background:linear-gradient(145deg,#11151b 0%,#0b294f 72%,#0b4b91 130%); }
 .control { background:linear-gradient(145deg,#0c1118 0%,#0a315f 70%,#0b4b91 125%); }

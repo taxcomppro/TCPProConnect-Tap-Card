@@ -1,4 +1,14 @@
-# vinext-starter
+# ProConnect by Tax Compliance Pro
+
+This repository contains the ProConnect product page and the public tap-card experience.
+
+Review the public profile at `/connect/demo-jordan-williams`. The shared `/connect` route provides a printed-code fallback for cards carrying the original generic NFC address. Production cards should use a unique opaque token in `/connect/{cardToken}`.
+
+The review branch includes a D1/Drizzle card inventory, profile, assignment history, custom links, connection exchange, event schema, membership-verified activation endpoint, vCard download, and integration documentation in `docs/integration-handoff.md`.
+
+No production migration or deployment is performed by this branch.
+
+## Local development
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and

@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `uq_proconnect_assignment_signup_active` ON `proconnect_card_assignments` (`signup_session_id`) WHERE "proconnect_card_assignments"."status" = 'ACTIVE';
